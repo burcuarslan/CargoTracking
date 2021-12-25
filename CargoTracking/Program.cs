@@ -1,12 +1,13 @@
-﻿using CargoTracking.Business.Concrete;
-using CargoTracking.DataAccess.Abstract;
+﻿using CargoTrackingApp.Business.Abstract;
+using CargoTrackingApp.Business.Concrete;
+using CargoTrackingApp.DataAccess.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CargoTracking
+namespace CargoTrackingApp
 {
     static class Program
     {

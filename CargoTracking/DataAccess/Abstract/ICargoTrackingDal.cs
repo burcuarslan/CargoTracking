@@ -1,18 +1,18 @@
-﻿using CargoTracking.Entity.Concrete;
+﻿using CargoTrackingApp.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CargoTracking.DataAccess.Abstract
+namespace CargoTrackingApp.DataAccess.Abstract
 {
-    interface ICargoTrackingDal
+    public interface ICargoTrackingDal
     {
-        List<CargoT> GetAll();
-        void Add(CargoT cargoT);
-        void Delete(CargoT cargoT);
-        void Update(CargoT cargoT);
-        List<CargoT> getById(int id);
+        List<CargoTracking> GetAll();
+        void Add(CargoTracking cargoT);
+        void Delete(CargoTracking cargoT);
+        void Update(CargoTracking cargoT);
+        List<CargoTracking> getById(int id);
     }
 }

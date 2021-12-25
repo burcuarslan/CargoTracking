@@ -4,13 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CargoTracking.Entity.Concrete
+namespace CargoTrackingApp.Entity.Concrete
 {
-    public class Cargo:Customer
+    public class Cargo:User
     {
         public int CargoId { get; set; }
         public String SendingAddress { get; set; }
         public String ReceivingAddress { get; set; }
+        public Cargo()
+        {
+
+        }
+        public Cargo(int UserId, String Name, String LastName, String PhoneNumber, String Email, String Password, int CargoId, String SendingAddress, String ReceivingAddress): base(UserId, Name, LastName, PhoneNumber,Email, Password)
+        {
+            this.SendingAddress = SendingAddress;
+            this.ReceivingAddress = ReceivingAddress;
+        }
 
     }
 }

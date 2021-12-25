@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CargoTracking.Entity.Concrete
+namespace CargoTrackingApp.Entity.Concrete
 {
-    public class Customer:User
+    public class Customer
     {
         public String Address { get; set; }
 

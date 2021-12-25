@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace CargoTracking.Properties
+namespace CargoTrackingApp.Properties
 {
     /// <summary>
     ///   Yerelleştirilmiş dizeleri vs. aramak için türü kesin belirlenmiş bir kaynak sınıfı.

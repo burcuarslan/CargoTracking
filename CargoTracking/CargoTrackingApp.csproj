@@ -94,9 +94,9 @@
     <Compile Include="Business\Abstract\ICargoTrackingService.cs" />
     <Compile Include="Business\Concrete\CargoTrackingManager.cs" />
     <Compile Include="DataAccess\Abstract\ICargoTrackingDal.cs" />
-    <Compile Include="DataAccess\Abstract\InMemoryCargoTracking.cs" />
+    <Compile Include="DataAccess\Concrete\InMemoryCargoTracking.cs" />
     <Compile Include="Entity\Concrete\Cargo.cs" />
-    <Compile Include="Entity\Concrete\CargoT.cs" />
+    <Compile Include="Entity\Concrete\CargoTracking.cs" />
     <Compile Include="Entity\Concrete\Customer.cs" />
     <Compile Include="Entity\Concrete\User.cs" />
     <Compile Include="Form1.cs">
@@ -119,6 +119,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="jsconfig1.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -133,9 +134,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAccess\Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
