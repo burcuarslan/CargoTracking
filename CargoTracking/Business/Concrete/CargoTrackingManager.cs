@@ -17,27 +17,27 @@ namespace CargoTrackingApp.Business.Concrete
             _cargoDal = cargoDal;
         }
 
-        public void Add(CargoTracking cargoT)
+        public void Add(Tracking cargoT)
         {
             _cargoDal.Add(cargoT);
         }
 
-        public void Delete(CargoTracking cargoT)
+        public void Delete(Tracking cargoT)
         {
             _cargoDal.Delete(cargoT);
         }
 
-        public List<CargoTracking> GetAll()
+        public List<Tracking> GetAll()
         {
            return  _cargoDal.GetAll();
         }
 
-        public List<CargoTracking> GetById(int id)
+        public List<Tracking> GetById(int id)
         {
             return _cargoDal.getById(id);
         }
 
-        public void Update(CargoTracking cargoT)
+        public void Update(Tracking cargoT)
         {
             _cargoDal.Update(cargoT);
         }

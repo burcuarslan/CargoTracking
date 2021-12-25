@@ -1,4 +1,5 @@
-﻿using CargoTrackingApp.Entity.Concrete;
+﻿
+using CargoTrackingApp.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace CargoTrackingApp.Business.Abstract
 {
     public interface ICargoTrackingService
     {
-        List<CargoTracking> GetAll();
-        List<CargoTracking> GetById(int id);
-        void Add(CargoTracking cargoT);
-        void Delete(CargoTracking cargoT);
-        void Update(CargoTracking cargoT);
+        List<Tracking> GetAll();
+        List<Tracking> GetById(int id);
+        void Add(Tracking cargoT);
+        void Delete(Tracking cargoT);
+        void Update(Tracking cargoT);
 
     }
 }

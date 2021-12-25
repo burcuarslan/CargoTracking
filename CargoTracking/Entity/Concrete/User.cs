@@ -13,19 +13,19 @@ namespace CargoTrackingApp.Entity.Concrete
         public String LastName { get; set; }
         public String PhoneNumber { get; set; }
         public String Email { get; set; }
-        public String Password { get; set; }
+        
         public User()
         {
 
         }
-        public User(int UserId, String Name, String LastName, String PhoneNumber, String Email, String Password)
+        public User(int UserId, String Name, String LastName, String PhoneNumber, String Email)
         {
             this.UserId = UserId;
             this.Name = Name;
             this.LastName = LastName;
             this.PhoneNumber = PhoneNumber;
             this.Email = Email;
-            this.Password = Password;
+            
         }
     }
 }

@@ -8,6 +8,7 @@ namespace CargoTrackingApp.Entity.Concrete
 {
     public class Customer
     {
+        public String Password { get; set; }
         public String Address { get; set; }
 
     }

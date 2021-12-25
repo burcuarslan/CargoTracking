@@ -15,7 +15,7 @@ namespace CargoTrackingApp.Entity.Concrete
         {
 
         }
-        public Cargo(int UserId, String Name, String LastName, String PhoneNumber, String Email, String Password, int CargoId, String SendingAddress, String ReceivingAddress): base(UserId, Name, LastName, PhoneNumber,Email, Password)
+        public Cargo(int UserId, String Name, String LastName, String PhoneNumber, String Email, int CargoId, String SendingAddress, String ReceivingAddress): base(UserId, Name, LastName, PhoneNumber,Email)
         {
             this.SendingAddress = SendingAddress;
             this.ReceivingAddress = ReceivingAddress;

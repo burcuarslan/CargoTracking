@@ -12,17 +12,17 @@ namespace CargoTrackingApp.DataAccess.Concrete
 {
     public class InMemoryCargoTracking : ICargoTrackingDal
     {
-        List<CargoTracking> _cargos;
+        List<Tracking> _cargos;
         public Object b;
         public InMemoryCargoTracking()
         {
             String a = File.ReadAllText(@"C:\Users\burcu\source\repos\CargoTracking\CargoTracking\data.json");
              b=JsonConvert.DeserializeObject(a);
            
-            _cargos = new List<CargoTracking>
+            _cargos = new List<Tracking>
             {
-                new CargoTracking{ UserId=1, Name="burcu", LastName="arslan", PhoneNumber="5442276917", Email="burcuarslln@gmail.com", Password="12345", CargoId=1, SendingAddress="slkrghşslkjgh", ReceivingAddress="slngslkjşhflsk",CargoTrackingId=1,CargoStatus="yolda" },
-                new CargoTracking{ UserId=2, Name="emrecan", LastName="arslan", PhoneNumber="5442276917", Email="burcuarslln@gmail.com", Password="12345", CargoId=2, SendingAddress="slkrghşslkjgh", ReceivingAddress="slngslkjşhflsk",CargoTrackingId=1,CargoStatus="ürün teslim edildi" }
+                new Tracking{ UserId=1, Name="burcu", LastName="arslan", PhoneNumber="5442276917", Email="burcuarslln@gmail.com", CargoId=1, SendingAddress="slkrghşslkjgh", ReceivingAddress="slngslkjşhflsk",CargoTrackingId=1,CargoStatus="yolda" },
+                new Tracking{ UserId=2, Name="emrecan", LastName="arslan", PhoneNumber="5442276917", Email="burcuarslln@gmail.com", CargoId=2, SendingAddress="slkrghşslkjgh", ReceivingAddress="slngslkjşhflsk",CargoTrackingId=1,CargoStatus="ürün teslim edildi" }
 
             };
             //string json = JsonConvert.SerializeObject(_cargos.ToArray());
@@ -33,7 +33,7 @@ namespace CargoTrackingApp.DataAccess.Concrete
 
         }
 
-        public void Add(CargoTracking cargoT)
+        public void Add(Tracking cargoT)
         {
             _cargos.Add(cargoT);
             string json = JsonConvert.SerializeObject(_cargos.ToArray());
@@ -44,30 +44,30 @@ namespace CargoTrackingApp.DataAccess.Concrete
 
         }
 
-        public void Delete(CargoTracking cargoT)
+        public void Delete(Tracking cargoT)
         {
 
-             CargoTracking cargoToDelete = _cargos.SingleOrDefault(c => c.CargoId == cargoT.CargoId);
+            Tracking cargoToDelete = _cargos.SingleOrDefault(c => c.CargoId == cargoT.CargoId);
             _cargos.Remove(cargoToDelete);
         }
 
 
-        public List<CargoTracking> GetAll()
+        public List<Tracking> GetAll()
         {
             return _cargos;
         }
 
 
-        public List<CargoTracking> getById(int id)
+        public List<Tracking> getById(int id)
         {
             return _cargos.Where(c => c.CargoId == id).ToList();
 
         }
 
 
-        public void Update(CargoTracking cargoT)
+        public void Update(Tracking cargoT)
         {
-            CargoTracking cargoUpdate = _cargos.SingleOrDefault(c => c.CargoId == cargoT.CargoId);
+            Tracking cargoUpdate = _cargos.SingleOrDefault(c => c.CargoId == cargoT.CargoId);
             cargoUpdate.CargoId = cargoT.CargoId;
             cargoUpdate.CargoStatus = cargoT.CargoStatus;
         }

@@ -29,7 +29,6 @@ C:\Users\burcu\source\repos\CargoTracking\CargoTracking\bin\Debug\System.Text.Js
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\bin\Debug\System.Threading.Channels.xml
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\bin\Debug\System.ValueTuple.xml
-C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTrackingApp.csproj.AssemblyReference.cache
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTrackingApp.Form1.resources
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.Properties.Resources.resources
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTrackingApp.csproj.GenerateResource.cache
@@ -37,3 +36,7 @@ C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTrackingA
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTrackingApp.csproj.CopyComplete
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.exe
 C:\Users\burcu\source\repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.pdb
+C:\Users\burcu\Source\Repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.Form2.resources
+C:\Users\burcu\Source\Repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.Form3.resources
+C:\Users\burcu\Source\Repos\CargoTracking\CargoTracking\obj\Debug\CargoTrackingApp.csproj.AssemblyReference.cache
+C:\Users\burcu\Source\Repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.Cargo.resources

@@ -9,10 +9,10 @@ namespace CargoTrackingApp.DataAccess.Abstract
 {
     public interface ICargoTrackingDal
     {
-        List<CargoTracking> GetAll();
-        void Add(CargoTracking cargoT);
-        void Delete(CargoTracking cargoT);
-        void Update(CargoTracking cargoT);
-        List<CargoTracking> getById(int id);
+        List<Tracking> GetAll();
+        void Add(Tracking cargoT);
+        void Delete(Tracking cargoT);
+        void Update(Tracking cargoT);
+        List<Tracking> getById(int id);
     }
 }

@@ -19,7 +19,7 @@ namespace CargoTrackingApp
 {
     public partial class Form1 : Form
     {
-        CargoTrackingManager manager = new CargoTrackingManager(new InMemoryCargoTracking());
+        CargoTrackingManager manager;
        // ICargoTrackingService _trackingService;
 
 
@@ -29,14 +29,9 @@ namespace CargoTrackingApp
            // _trackingService = trackingService;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            manager = new CargoTrackingManager(new InMemoryCargoTracking());
             int _id = Convert.ToInt32(textBox1.Text);
             foreach (var cargo in manager.GetById(_id))
             {
@@ -50,23 +45,8 @@ namespace CargoTrackingApp
         
         private void button2_Click(object sender, EventArgs e)
         {
-
-            CargoTracking newCargo = new CargoTracking(Convert.ToInt32(textBox2.Text),textBox3.Text,textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, Convert.ToInt32(textBox8.Text),textBox9.Text,textBox10.Text,Convert.ToInt32(textBox11.Text),textBox12.Text);
-
-            manager.Add(newCargo);
-            Thread.Sleep(5000);
-            foreach (var c in manager.GetAll())
-            {
-                MessageBox.Show(c.Name);
-                
-            }
-            
+            Cargo cargo = new Cargo();     
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //int delete = Convert.ToInt32(textBox13.Text);
-            //manager.Delete(delete);
-        }
     }
 }
